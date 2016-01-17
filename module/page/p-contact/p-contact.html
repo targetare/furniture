@@ -1,0 +1,58 @@
+
+
+<div class="page p-contact">
+    <v-header></v-header>
+    <div class="page_main">
+        <div class="p-contact_map">
+            <img src="/module/page/p-contact/img/map.png" class="p-contact_map-img">
+        </div>
+        
+        <div class="container p-contact_main">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <div class="p-contact-info">
+                        <h3 class="p-contact-info_title">Contact Info</h3>
+                        <div class="p-contact-info_items">
+                            <div class="p-contact-info_item row">
+                                <span class="p-contact-info_label col-lg-3">Address:</span>
+                                <span class="p-contact-info_value col-lg-9">497 Jacob Mare Street <br> Pretoria <br> 0001 <br> South Africa</span>
+                            </div>
+                            <div class="p-contact-info_item row">
+                                <span class="p-contact-info_label col-lg-3">Phone:</span>
+                                <span class="p-contact-info_value col-lg-9">084 953 7882</span>
+                            </div>
+                            <div class="p-contact-info_item row">
+                                <span class="p-contact-info_label col-lg-3">Email:</span>
+                                <span class="p-contact-info_value col-lg-9"><a href="mailto:xxx@163.com" class="p-contact-info_email link">TerryRDickens@doyrep.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="p-contact-info_title">Get in Touch with Us</h3>
+                    <form action="#" class="form p-contact-info_form">
+                        <div class="form_group">
+                            <label for="name" class="form_label form_label__required">Your Name</label>
+                            <input type="text" id="name" name="name" class="form_field">
+                        </div>
+                        <div class="form_group">
+                            <label for="email" class="form_label form_label__required">Your Email</label>
+                            <input type="text" id="email" name="email" class="form_field">
+                        </div>
+                        <div class="form_group">
+                            <label for="phone" class="form_label form_label__required">Your Phone num</label>
+                            <input type="text" id="phone" class="form_field">
+                        </div>
+                        <div class="form_group">
+                            <label for="phone" class="form_label form_label__required">Your Message</label>
+                            <textarea name="phone" id="phone" rows="10" class="form_field"></textarea>
+                        </div>
+
+                        <button class="p-contact-info_send" @click.prevent="sendMessage">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <v-footer></v-footer>
+</div>

@@ -1,0 +1,80 @@
+/* 
+* @Author: seven
+* @Date:   2016-01-09 05:31:32
+*/
+/*  variables
+--------------------4--------------------3--------------------2--------------------1*/
+/*  x
+--------------------4--------------------3--------------------2*/
+/*  sizes
+--------------------4--------------------3--------------------2*/
+/*  colors
+--------------------4--------------------3--------------------2*/
+/*  font-size
+--------------------4--------------------3--------------------2*/
+/*  Media queries breakpoints
+--------------------4--------------------3--------------------2*/
+/* Define the breakpoints at which your layout will change, adapting to different screen sizes. */
+/* So media queries don't overlap when required, provide a maximum */
+/*  Grid system
+    Define your custom responsive grid.
+--------------------4--------------------3--------------------2*/
+/* Define the maximum width of `.container` for different screen sizes. */
+/* Medium screen / desktop */
+/* For `@screen-md-min` and up. */
+/* Large screen / wide desktop */
+/* For `@screen-lg-min` and up. */
+/*  mixins
+--------------------4--------------------3--------------------2--------------------1*/
+/*  .aspect-ratio-container
+--------------------4--------------------3--------------------2*/
+/*  clearfix
+--------------------4--------------------3--------------------2*/
+/*  ellipsis 
+--------------------4--------------------3--------------------2*/
+.header {
+  background-color: #fff;
+}
+.header_inner:before,
+.header_inner:after {
+  content: " ";
+  display: table;
+}
+.header_inner:after {
+  clear: both;
+}
+.header_logo {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  background: #1abc9c url(/module/header/img/logo.png) no-repeat center;
+}
+.header_nav {
+  display: inline-block;
+  float: right;
+  width: 300px;
+}
+/* clear */
+.header_nav:before,
+.header_nav:after {
+  content: " ";
+  display: table;
+}
+.header_nav:after {
+  clear: both;
+}
+.header_nav-item {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.header_nav-item .link {
+  font-weight: bold;
+}
+.header_link__active {
+  /* color: red; */
+}

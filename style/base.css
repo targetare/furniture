@@ -1,0 +1,215 @@
+/*  global
+--------------------4--------------------3--------------------2--------------------1*/
+/*
+ * 字体
+ */
+html {
+  height: 100%;
+  font-size: 1em;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+}
+/* 
+ * (android某些浏览器) 消除超链接 focus 状态时的蓝色边框
+ */
+body {
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*
+ * border-box
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+/*  common
+--------------------4--------------------3--------------------2--------------------1*/
+/*  text
+--------------------4--------------------3--------------------2*/
+/* 小字体 - 70% */
+.text__small {
+  font-size: 70%;
+}
+/* 划线 */
+.text__line-through {
+  text-decoration: line-through;
+}
+/*  text__weak */
+.text__weak {
+  color: #888;
+}
+/* 
+ * 文本溢出时显示省略号(单行)
+ */
+.text__ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 
+ * 注意:容器有padding且文本超过2行时,第2行末会有省略号,但padding-bottom区域会显示一部分第3行的文本
+        (.text__well.text__ellipsis-multi 会出现这个问题, 可以使用 .text__well>span.text__ellipsis-multi 来解决)
+ * 文本溢出时显示省略号(默认2行) 
+ */
+.text__ellipsis__multi {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* 限制在一个块元素显示的文本的行数 */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.text__hide {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text__center {
+  text-align: center;
+}
+/*  img
+--------------------4--------------------3--------------------2*/
+.img__full {
+  width: 100%;
+}
+/*  img-landscape
+--------------------4--------------------3*/
+.img-landscape {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  overflow: hidden;
+}
+.img-landscape img {
+  position: absolute;
+  /* 保证占全宽 */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/*  link 
+--------------------4--------------------3--------------------2*/
+/*a.txtlink, a.txtlink:visited, a.txtlink:hover, a.txtlink:active{
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}*/
+a {
+  /* 校正 link 可点击区域(http://joshnh.com/2012/09/06/increasing-the-clickable-area-of-inline-links/) */
+  position: relative;
+}
+/* a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+} */
+/*  utils
+--------------------4--------------------3--------------------2--------------------1*/
+/*  Clearfix
+contain floats(from HTML5 Boilerplate v4.3.0)
+For modern browsers
+1. The space content is one way to avoid an Opera bug when the
+   `contenteditable` attribute is included anywhere else in the document.
+   Otherwise it causes space to appear at the top and bottom of elements
+   that receive the `clearfix` class.
+2. The use of `table` rather than `block` is only necessary if using
+   `:before` to contain the top-margins of child elements.
+--------------------4--------------------3--------------------2*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+/*  justify
+    注意: 为隐藏伪行的高度(H5 DOCTYPE), .justify 必须将 line-height 设置为 0, 使用时注意恢复子元素的 line-height 
+    (默认 justify-item 恢复为 1, 若使用 less 可直接用变量值来恢复)
+.justify{
+    隐藏伪行
+    line-height: 0;
+    text-align:justify;
+}
+.justify:after{
+    content:"";
+    display:inline-block; 
+    width:100%;
+    隐藏伪行
+    vertical-align: top;
+}
+.justify_item{
+    display:inline-block;
+    line-height: 1;
+}
+--------------------4--------------------3--------------------2*/
+.justify:before,
+.justify:after {
+  content: " ";
+  display: table;
+}
+.justify:after {
+  clear: both;
+}
+.justify_item {
+  float: right;
+}
+.justify_item:first-child {
+  float: left;
+}
+/*  squeezing - 两列挤压布局
+    注意: 固定宽(fixed)和不变宽(immutable)的区别
+    参考:bootstrap#input-group
+--------------------4--------------------3--------------------2*/
+.squeezing {
+  display: table;
+}
+.squeezing_full {
+  display: table-cell;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.squeezing_immutable {
+  display: table-cell;
+  /*position: relative; 修正*/
+  width: 1%;
+  /* bugfix:IE11 错行 */
+  vertical-align: top;
+  white-space: nowrap;
+}
+/*  常用样式片段,使用时建议封闭到 block 中
+--------------------4--------------------3--------------------2--------------------1*/
+/*  scrollable(mobile)
+.scrollable {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+--------------------4--------------------3--------------------2*/

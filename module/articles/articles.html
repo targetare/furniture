@@ -1,0 +1,13 @@
+
+<div class="articles">
+    <div class="articles_item" v-for="article in articles">
+        <h3 class="articles_title">{{article.title}}</h3>
+        <div class="articles_metas">
+            <span class="articles_meta"><i class="articles_meta-ico fa fa-bookmark"></i> {{article.created}}</span>
+            <span class="articles_meta"><i class="articles_meta-ico fa fa-eye"></i> {{article.views}}</span>
+        </div>
+        <p class="articles_excerpt">{{article.excerpt}}</p>
+        <a v-link="{path: '/news/' + article.id}" class="articles_more link">read more</a>
+    </div>
+</div>
+

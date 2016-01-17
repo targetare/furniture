@@ -1,0 +1,9 @@
+
+<ul class="recommendations">
+    <li class="recommendation" v-for="product in products">
+        <div class="recommendation_inner">
+            <div class="recommendation_img" :style="{backgroundImage:'url(' + product.img + ')'}"></div>
+            <span class="recommendation_name">{{product.name}}</span>
+        </div>
+    </li>
+</ul>

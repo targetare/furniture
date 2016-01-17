@@ -1,0 +1,33 @@
+/* 
+* @Author: seven
+* @Date:   2016-01-09 14:47:06
+*/
+/*  home-services
+--------------------4--------------------3--------------------2--------------------1*/
+.home-services {
+  /* &_title{
+        font-weight: normal;
+        color: @color-primary;
+    } */
+}
+.home-services_item {
+  float: left;
+  width: 33.33333333%;
+}
+.home-services_icon {
+  color: #1abc9c;
+}
+.home-services_text {
+  padding: 0 16px;
+  color: #777777;
+  text-indent: 32px;
+  text-align: justify;
+}
+.home-services:before,
+.home-services:after {
+  content: " ";
+  display: table;
+}
+.home-services:after {
+  clear: both;
+}

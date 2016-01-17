@@ -1,0 +1,36 @@
+.articles {
+  color: #555555;
+}
+.articles_item {
+  margin-bottom: 64px;
+  border-top: 4px solid #1abc9c;
+}
+.articles_title {
+  margin: 8px 0 16px 0;
+}
+.articles_metas {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #777777;
+}
+.articles_meta {
+  display: inline-block;
+  margin-right: 16px;
+}
+.articles_meta-ico {
+  color: #1abc9c;
+}
+.articles_excerpt {
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* 限制在一个块元素显示的文本的行数 */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.articles_more {
+  color: #1abc9c;
+  text-decoration: underline;
+}

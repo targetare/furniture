@@ -1,0 +1,24 @@
+/* 
+* @Author: seven
+* @Date:   2016-01-09 20:38:50
+*/
+
+.footer{
+    color: #ACC0C0;
+    background-color: #000;
+}
+
+.footer_copyright, .footer_sitemap{
+    display: inline-block;
+}
+
+.footer_sitemap-link{
+    display: inline-block;
+    padding: 0 12px;
+    border-left: 1px solid #ddd;
+
+    line-height: 1;
+}
+.footer_sitemap-link:first-child{
+    border: 0;
+}

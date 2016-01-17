@@ -1,0 +1,60 @@
+
+
+<div class="page page-home">
+    <v-header></v-header>
+    
+    <div class="page_main">
+        <slide></slide>
+        <section class="section section__white">
+            <div class="container">
+                <div class="section_head">
+                    <h1 class="section_title">Our Services</h1>
+                </div>
+                <div class="section_body">
+                    <!-- home-services -->
+                    <div class="home-services">
+                        <div class="home-services_item">
+                            <div class="home-services_icon">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <p class="home-services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet erat at neque euismod aliquet. Integer eget risus id arcu sollicitudin facilisis. </p>
+                        </div>
+                        <div class="home-services_item">
+                            <div class="home-services_icon">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <p class="home-services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet erat at neque euismod aliquet. Integer eget risus id arcu sollicitudin facilisis. </p>
+                        </div>
+                        <div class="home-services_item">
+                            <div class="home-services_icon">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <p class="home-services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet erat at neque euismod aliquet. Integer eget risus id arcu sollicitudin facilisis. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section_head">
+                    <h1 class="section_title">Recent Products</h1>
+                </div>
+                <div class="section_body">
+                    <recommendations :products="recommendations"></recommendations>
+                </div>
+            </div>
+        </section>
+    </div>
+    <v-footer></v-footer>
+</div>

@@ -1,0 +1,17 @@
+.article_content {
+  padding: 16px 0 32px 0;
+  text-align: justify;
+}
+.article_metas {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #777777;
+}
+.article_meta {
+  display: inline-block;
+  margin-right: 16px;
+}
+.article_meta-ico {
+  color: #1abc9c;
+}

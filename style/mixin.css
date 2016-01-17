@@ -1,0 +1,30 @@
+/*  variables
+--------------------4--------------------3--------------------2--------------------1*/
+/*  x
+--------------------4--------------------3--------------------2*/
+/*  sizes
+--------------------4--------------------3--------------------2*/
+/*  colors
+--------------------4--------------------3--------------------2*/
+/*  font-size
+--------------------4--------------------3--------------------2*/
+/*  Media queries breakpoints
+--------------------4--------------------3--------------------2*/
+/* Define the breakpoints at which your layout will change, adapting to different screen sizes. */
+/* So media queries don't overlap when required, provide a maximum */
+/*  Grid system
+    Define your custom responsive grid.
+--------------------4--------------------3--------------------2*/
+/* Define the maximum width of `.container` for different screen sizes. */
+/* Medium screen / desktop */
+/* For `@screen-md-min` and up. */
+/* Large screen / wide desktop */
+/* For `@screen-lg-min` and up. */
+/*  mixins
+--------------------4--------------------3--------------------2--------------------1*/
+/*  .aspect-ratio-container
+--------------------4--------------------3--------------------2*/
+/*  clearfix
+--------------------4--------------------3--------------------2*/
+/*  ellipsis 
+--------------------4--------------------3--------------------2*/
