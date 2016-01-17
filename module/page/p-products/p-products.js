@@ -23,7 +23,7 @@ define('page/p-products', function(require, exports, module) {
   
               products: [{
                   name: 'COFFEE TABLE CT-B137',
-                  img: '/test/img/product1.jpeg',
+                  img: '/furniture/test/img/product1.jpeg',
                   model: 'CT-E72',
                   size: 'L600*W800*H930',
                   color: 'Black',
@@ -31,7 +31,7 @@ define('page/p-products', function(require, exports, module) {
                   category: 'TV Stands'
               },{
                   name: 'COFFEE TABLE CT-B137',
-                  img: '/test/img/product1.jpeg',
+                  img: '/furniture/test/img/product1.jpeg',
                   model: 'CT-E72',
                   size: 'L600*W800*H930',
                   color: 'Black',
@@ -39,7 +39,7 @@ define('page/p-products', function(require, exports, module) {
                   category: 'TV Stands'
               },{
                   name: 'COFFEE TABLE CT-B137',
-                  img: '/test/img/product1.jpeg',
+                  img: '/furniture/test/img/product1.jpeg',
                   model: 'CT-E72',
                   size: 'L600*W800*H930',
                   color: 'Black',
@@ -47,7 +47,7 @@ define('page/p-products', function(require, exports, module) {
                   category: 'TV Stands'
               },{
                   name: 'COFFEE TABLE CT-B137',
-                  img: '/test/img/product1.jpeg',
+                  img: '/furniture/test/img/product1.jpeg',
                   model: 'CT-E72',
                   size: 'L600*W800*H930',
                   color: 'Black',
